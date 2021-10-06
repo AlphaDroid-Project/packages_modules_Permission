@@ -116,6 +116,7 @@ object PermissionUsageControlPreferenceUtils {
             }
             else -> return
         }
+        if (act == 0) return
         PermissionControllerStatsLog.write(PERMISSION_USAGE_FRAGMENT_INTERACTION, sessionId, act)
     }
 }
